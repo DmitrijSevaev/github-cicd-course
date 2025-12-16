@@ -46,7 +46,7 @@ jobs:
           context: ./task_b
           file: ./task_b/Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository }}:${{ inputs.tag }}
+          tags: ghcr.io/${{ lower(github.repository) }}:${{ inputs.tag }}
           labels: ${{ steps.meta.outputs.labels }}
 
   test:
