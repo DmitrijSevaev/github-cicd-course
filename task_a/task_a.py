@@ -15,6 +15,7 @@ def fib(n: int) -> int:
 
 def test_square_area() -> None:
     assert square_area(5) == 25
+    assert square_area(4) == 16
     assert square_area(0) == 0
 
 
